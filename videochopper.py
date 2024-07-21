@@ -15,11 +15,6 @@ import pathlib
 # This will make a clip from 0:10 to 0:20, and another for 0:20 to 0:30. 
 ####
 
-def getTitles(title_filename):
-    with open(title_filename, 'r') as file_handle:
-        titlenames = file_handle.read().strip().split('\n')
-    return titlenames
-
 def getTimestamps(timestamp_filename):
     with open(timestamp_filename, 'r') as file_handle:
         timestamps = file_handle.read().strip().split('\n')
